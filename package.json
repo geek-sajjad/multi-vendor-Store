@@ -1,0 +1,26 @@
+{
+    "name": "multi-vendor-store",
+    "version": "1.0.0",
+    "description": "Simple multi vendor shoping website using Express and MnogoDB",
+    "main": "app.js",
+    "scripts": {
+        "start": "nodemon app.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/geek-sajjad/multi-vendor-store.git"
+    },
+    "author": "Sajad Sohrabi",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/geek-sajjad/multi-vendor-store/issues"
+    },
+    "homepage": "https://github.com/geek-sajjad/multi-vendor-store#readme",
+    "dependencies": {
+        "ejs": "^3.1.6",
+        "express": "^4.17.1"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.7"
+    }
+}
