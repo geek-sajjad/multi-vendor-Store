@@ -2,35 +2,18 @@
 
 <div class="container mt-2">
     <div class="row text-center d-flex justify-content-center">
-        <div class="col-3">
-            
-            <div class="card">
-                <img src="/img/adidas.jpeg" alt="adidas" width="150" class="card-img-top">
-                <div class="card-body">
-                    <div class="card-title">One of three columns</div>
-                    <a href="#" class="btn btn-success stretched-link">detail</a>
+
+        <% vendors.forEach(vendor => { %>
+            <div class="col">
+                <div class="card">
+                    <img src="<%= vendor.imageUrl %>" alt="<%=vendor.name%>" width="150" class="card-img-top">
+                    <div class="card-body">
+                        <div class="card-title"><%= vendor.name%></div>
+                        <a href="#" class="btn btn-success stretched-link">detail</a>
+                    </div>
                 </div>
             </div>
-            
-        </div>
-        <div class="col-3">
-            <div class="card">
-                <img src="/img/adidas.jpeg" alt="adidas" width="150" class="card-img-top">
-                <div class="card-body">
-                    <div class="card-title">One of three columns</div>
-                    <a href="#" class="btn btn-success stretched-link">detail</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-3">
-            <div class="card">
-                <img src="/img/adidas.jpeg" alt="adidas" width="150" class="card-img-top">
-                <div class="card-body">
-                    <div class="card-title">One of three columns</div>
-                    <a href="#" class="btn btn-success stretched-link">detail</a>
-                </div>
-            </div>
-        </div>
+        <%}); %> 
     </div>
     
 </div>
