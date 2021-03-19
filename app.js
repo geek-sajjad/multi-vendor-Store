@@ -17,6 +17,9 @@ const Vendor = require('./models/vendor');
 //middlewares
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
+app.use(express.urlencoded({
+    extended: false
+}));
 app.use(vendorRouter);
 app.use(shopRouter);
 app.use('/admin', adminRouter);

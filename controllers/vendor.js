@@ -1,8 +1,6 @@
-exports.getVendors = (req, res, next) => {
-    res.send('vendors');
-};
-
-exports.getVendor = (req, res, next) => {
-    const id = req.params.id;
-    res.send(id);
+exports.getPanel = (req, res, next) => {
+    res.render('vendor/panel', {
+        pageTitle: 'Vendors Panel',
+        path: '/vendor'
+    });
 };

@@ -1,5 +1,20 @@
 <%- include('../includes/head');%>
 <%- include('../includes/navbar');%>
 
-<p>create vendor page</p>
+<div class="row d-flex justify-content-center">
+    <div class="col-3">
+        <form action="/admin/create-vendor" method="POST">
+            <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" name="name" id="name" class="form-control">
+            </div>
+            <div class="mb-3">
+                    <label for="imageUrl" class="form-label">Image url</label>
+                    <input type="text" name="imageUrl" id="imageUrl" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-primary">Create</button>
+        </form>
+    </div>
+    
+</div>
 <%- include('../includes/end');%>
